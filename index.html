@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Claudio Sapo personal site." />
+  <title>claudio@sapo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="page">
+    <header class="shell-head">
+      <div class="prompt">
+        <span class="prompt-user">[claudio@sapo ~]#</span>
+        <span class="prompt-cmd">./home.sh</span>
+      </div>
+      <nav class="shell-nav" aria-label="Primary">
+        <a href="./about/">About me</a>
+        <a href="./project/">Projects</a>
+        <a href="./cv/">CV</a>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <p>
+        I work on applied AI systems, data science, and tools that turn messy information into
+        usable decisions.
+      </p>
+      <p>
+        At Avvale, I am building an AI Offer Advisor: a system for semantic search over historical
+        offers and dynamic document generation from the most relevant past work.
+      </p>
+      <p>
+        My academic work sits between machine learning research and practical engineering. I have
+        worked on automatic prompt optimization with GEPA, multi-agent systems, and DeepQueueNet
+        models for telecommunication traffic delay prediction.
+      </p>
+
+      <p class="separator">*</p>
+
+      <p>
+        Some projects:
+      </p>
+
+      <ul class="split-list">
+        <li>
+          <a href="./project/project1.html">AI Offer Advisor</a>
+          <span class="date">Avvale </span>
+        </li>
+        <li>
+          <a href="./project/project2.html">Automatic Prompt optimization using GEPA</a>
+          <span class="date">Master's thesis / Poliba</span>
+        </li>
+        <li>
+          <a href="./project/project3.html">DeepQueueNet Implementation</a>
+          <span class="date">ETSETB Lab / Barcelona </span>
+        </li>
+      </ul>
+
+      <div class="directory-grid" aria-label="Site sections">
+        <a class="directory-card" href="./project/">
+          <span class="directory-label">Projects</span>
+        </a>
+        <a class="directory-card" href="./cv/">
+          <span class="directory-label">Curriculum Vitae</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curriculum Vitae." />
+  <title>claudio@sapo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <main class="page page-shell-wide">
+    <header class="shell-head">
+      <div class="prompt">
+        <span class="prompt-user">[claudio@sapo ~]#</span>
+        <span class="prompt-cmd">cat ./cv</span>
+      </div>
+      <a class="download-link-small" href="../resume.txt" download="claudio-sapo-resume.txt">
+        Download resume
+      </a>
+      <nav class="shell-nav detail-nav" aria-label="Primary">
+        <a class="home-link" href="../index.html">home</a>
+        <a href="../project/">projects</a>
+      </nav>
+    </header>
+
+    <section class="intro">
+
+      <div class="cv-grid">
+        <!-- Section introduce line  -->
+        <section class="cv-section" style="border-top: none; padding-top: 0;">
+          <h2>Experience</h2>
+          <div class="cv-item">
+            <div class="cv-item-head">
+              <span>Avvale</span>
+              <span class="cv-item-meta">Data Scientist — Sept. 2025 – Present</span>
+            </div>
+            <ul class="cv-list">
+              <li>Creating an AI Offer Advisor for offer’s semantic search given a specific need and dynamic offer
+                generation starting from the selected historical offer</li>
+              <li>Ingesting 10K documents using Azure’s services and infrastructure to analyze documents and generate
+                new ones</li>
+              <li>Designed an ML model able to predict the ideal discount based on a set of customer variables</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Projects</h2>
+          <div class="cv-item">
+            <div class="cv-item-head">
+              <span>2APL implementation</span>
+              <span class="cv-item-meta">Feb. 2025 – June. 2025</span>
+            </div>
+            <ul class="cv-list">
+              <li>Designed and implemented a multi-agent system using the 2APL BDI (Belief-Desire-Intention) framework
+              </li>
+              <li>Increased task completion efficiency by 35% through modular agent architectures</li>
+            </ul>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-head">
+              <span>DeepQueueNet</span>
+              <span class="cv-item-meta">Feb. 2025 – June. 2025</span>
+            </div>
+            <ul class="cv-list">
+              <li>Extended a DeepQueueNet architecture combining LSTM-based sequence modeling and attention mechanisms
+                to handle ~1TB of package simulation and predict traffic delay using ETSETB resources</li>
+              <li>Developed an algorithm that flattened a packet-level network simulation dataset into CSV format and
+                preprocessing</li>
+            </ul>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-head">
+              <span>APO using GEPA</span>
+              <span class="cv-item-meta">Sept. 2019 – May 2020</span>
+            </div>
+            <ul class="cv-list">
+              <li>Developed an experimental framework to evaluate GEPA for automated prompt optimization and
+                memorization discovery in open-source LLMs, focusing on recommender-system datasets using Polytechnic of
+                Bari resources</li>
+              <li>Automated the generation and evaluation of thousands of candidate prompts, improving dataset coverage
+                extraction by 30%+ compared with manually engineered prompting strategies</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Education</h2>
+          <div class="cv-item">
+            <div class="cv-item-head">
+              <span>Polytechnic of Bari</span>
+              <span class="cv-item-meta">2024 – 2026</span>
+            </div>
+            <div class="muted">M.S. AI and Data Science, Graduated with Honors — Bari, Italy</div>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-head">
+              <span>Polytechnic of Barcelona</span>
+              <span class="cv-item-meta">2025 – 2026</span>
+            </div>
+            <div class="muted">Erasmus Exchange Program — Barcelona, Spain</div>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-head">
+              <span>Polytechnic of Bari</span>
+              <span class="cv-item-meta">2021 – 2024</span>
+            </div>
+            <div class="muted">B.A. Computer Engineering — Bari, Italy</div>
+          </div>
+
+          <div class="cv-item" style="margin-top: 14px;">
+            <div class="muted"><strong>Coursework:</strong> Big Data, Machine Learning, Deep Learning, Multiagent System
+              Design, Agents Based AI</div>
+            <div class="muted"><strong>Research:</strong> DeepQueueNet (in collaboration with Barcelona ETSET lab),
+              Automatic prompt optimization using GEPA (master’s thesis)</div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Certifications</h2>
+          <ul class="cv-list">
+            <li><strong>IELTS Academic:</strong> English certification (C1 proficiency, 7.0)</li>
+            <li><strong>Google Cloud Professional ML Engineer:</strong> Machine Learning systems design, MLOps,
+              deployment, monitoring</li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h2>Skills</h2>
+          <ul class="cv-list">
+            <li><strong>Languages:</strong> Python, Java, Prolog</li>
+            <li><strong>Cloud:</strong> Azure Document Intelligence, Azure Search, Azure DevOps, BigQuery, Vertex AI,
+              Vercel</li>
+            <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Scikit-Learn, Hugging Face, Pandas, DSPy, JAX, Keras
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

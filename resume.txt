@@ -1,0 +1,131 @@
+Gian Segato
+
+EXPERIENCE
+- Anthropic: AI research
+- Replit: early employee, trained code models, shipped the first coding agent, helped scale the company
+- Uniwhere: founder, built a product used by a large share of Italian university students before acquisition
+
+PROJECTS
+- AI product prototypes and agent workflows
+- Student productivity and learning tools
+- Internal tooling and developer experience work
+
+EDUCATION
+- Wellesley College, B.A. Computer Science, Pre-Med, 2014 - 2018
+
+SKILLS
+- Languages: Python, JavaScript, HTML/CSS, SQL
+- Tools: Figma, Notion, GitHub, Jira, Trello, Miro
+- Writing: essays, technical notes, and product documentation
+Here’s a clean **agent prompt** you can use to execute the modifications on the site:
+
+---
+
+## Pages
+
+* `/index.html` (Home)
+* `/project/` (Projects section)
+* `/cv/` (CV section)
+* `/miscellaneous/` (to be removed)
+* `/research/` (to be removed)
+* Essay pages:
+
+  * `essay-probabilistic-era.html`
+  * `essay-agency.html`
+  * `essay-dawn.html`
+  * `essay-edtech.html`
+
+---
+
+## What Changed
+
+1. **Essays → Projects**
+
+   * Replace the current “essays” section on the homepage with **3 main projects** (use the most relevant past and current AI/work projects).
+   * Remove essay emphasis as primary content (keep only if referenced elsewhere, but not as homepage structure).
+
+2. **Navigation cleanup**
+
+   * Remove:
+
+     * “Miscellaneous”
+     * “Research”
+   * Keep only:
+
+     * “Projects”
+     * “CV”
+
+3. **Email / identity update**
+
+   * Replace every occurrence of:
+
+     * `gian@segato` → `claudio@sapo`
+
+4. **CV page simplification**
+
+   * In `/cv/`, keep only:
+
+     * Home button
+     * Projects button
+   * Remove all other navigation links.
+
+5. **Projects page simplification**
+
+   * In `/project/`, keep only:
+
+     * CV button
+     * Home button
+
+6. **Project detail enhancement**
+
+   * For each individual project page:
+
+     * Add a **GitHub button** (redirect to repository)
+     * Add a **PDF download button** (resources/specs/whitepaper/downloadable material)
+
+---
+
+## How To Edit
+
+* Step 1: Update global navigation template first (affects all pages).
+* Step 2: Remove `miscellaneous` and `research` folders + all links pointing to them.
+* Step 3: Replace email string globally across HTML files.
+* Step 4: Rewrite homepage layout:
+
+  * Remove essay list
+  * Insert 3 project cards/sections instead
+* Step 5: Refactor `/cv/` navigation block to only Home + Projects.
+* Step 6: Refactor `/project/` navigation block to only CV + Home.
+* Step 7: For each project detail page:
+
+  * Insert GitHub button component (top or near title)
+  * Insert PDF download button (next to or under GitHub button)
+* Step 8: Ensure no broken links remain after deletions.
+
+---
+
+## Local Preview
+
+1. Start local server:
+
+   ```bash
+   python -m http.server 8000
+   ```
+2. Open:
+
+   ```
+   http://127.0.0.1:8000/index.html
+   ```
+3. Verify:
+
+   * Navigation only shows Home / Projects / CV
+   * No Miscellaneous or Research links exist
+   * Essays replaced with 3 project sections
+   * Email updated everywhere to `claudio@sapo`
+   * CV page only has Home + Projects buttons
+   * Projects page only has Home + CV buttons
+   * Project pages include GitHub + PDF buttons
+
+---
+
+If you want, I can also turn this into a **Cursor / Claude Code / OpenAI agent system prompt** so it runs fully autonomously and edits the repo directly.
